@@ -14,12 +14,26 @@
     <title>Frontend Mentor | Advice generator app</title>
 
     <link rel="stylesheet" type="text/css" href="./styles.css" media="screen" />
+    <script src="./main.js" defer></script>
   </head>
   <body>
     <div class="container">
-      Advice <span class="advice_number"></span>
+      <h1 class="advice_number"></h1>
       <p class="advice"></p>
-      <button class="next_advice">Click</button>
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/pattern-divider-desktop.svg"
+        />
+        <img
+          class="line"
+          src="./images/pattern-divider-mobile.svg"
+          alt="Divider"
+        />
+      </picture>
+      <button class="next_advice">
+        <img src="./images/icon-dice.svg" alt="Next quote" />
+      </button>
     </div>
 
     <div class="attribution">
@@ -28,6 +42,5 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
-    <script src="./main.js"></script>
   </body>
 </html>
