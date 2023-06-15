@@ -63,6 +63,7 @@ body {
 
 .line {
   margin: 0 auto 1rem;
+  max-width: 400px;
   display: block;
   padding: 1px;
   color: var(--light-cyan);
