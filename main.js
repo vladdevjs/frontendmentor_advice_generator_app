@@ -9,6 +9,7 @@ function getAdvice() {
   return fetch(proxyUrl + apiUrl, {
     headers: {
       'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
     },
   })
     .then((res) => res.json())
