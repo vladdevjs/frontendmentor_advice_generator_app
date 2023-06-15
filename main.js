@@ -6,7 +6,7 @@ const advice = document.querySelector('.advice');
 const button = document.querySelector('.next_advice');
 
 function getAdvice() {
-  return fetch(apiUrl, {
+  return fetch(proxyUrl + apiUrl, {
     headers: {
       'Content-Type': 'application/json',
     },
